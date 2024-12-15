@@ -1,0 +1,55 @@
+body {
+  margin: 0px;
+  color: #312783;
+}
+
+h2 {
+  margin: 0;
+  padding: 2%;
+}
+
+header > h2 {
+  padding: 5%;
+  padding-top: 10%;
+}
+
+header > h3 {
+  text-align: end;
+  padding-right: 3%;
+}
+
+b {
+  font-size: 2em;
+  margin: 0;
+}
+
+th, td {
+  padding: 10px;
+  width: calc(100%/4);
+}
+
+th {
+  text-align: start;
+  border-top: 1px #312783 solid;
+  border-bottom: 1px #312783 solid;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+th:hover, th:active {
+  background-color: #312783;
+  color: white;
+}
+
+tbody > tr > td {
+  text-align: center;
+  border-right: 2px #312783 solid;
+}
+
+/* CHANGES FOR SMALLER SCREENS */
+@media (max-width: 1200px) {
+  p, i {
+    font-size: 13px;
+  }
+}
+

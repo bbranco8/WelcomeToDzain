@@ -1,0 +1,113 @@
+body {
+  font-family: Arial;
+  color: #312783;
+  margin: 0;
+}
+
+h2 {
+  font-size: 3em;
+  padding: 5%;
+  padding-top: 10%;
+  margin: 0%;
+}
+
+/* LINKS */
+a {
+  color: #312783; 
+}
+
+/* IMAGES */
+img {
+  position: relative;
+}
+
+/* QUOTES */
+.quote {
+  border-top: 1px #312783 solid;
+  border-bottom: 1px #312783 solid;
+}
+
+.quote > p { 
+  text-align: start;
+  font-size: 3em;
+  padding-left: 6%;
+  line-height: 60px;
+  margin: 0px;
+  border-top: 1px #312783 solid;
+  border-bottom: 1px #312783 solid;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+/* HIDDEN OBJECTS */
+.hide {
+  visibility: collapse;
+}
+
+/* FOOTER */
+footer > p {
+  text-align: center;
+  font-size: 68%;
+}
+
+[type="submit"] {
+  background-color: white;
+}
+
+p::selection {
+  color: white;
+  background-color: #312783;
+}
+
+/* CHANGES FOR SMALLER SCREENS */
+@media (max-width: 1283px) {
+  .quote {
+    grid-template-rows: 50px 50px 50px;
+  }
+   .quote > p { 
+    padding-left: 4%;
+    font-size: 25px;
+    line-height: 50px;
+  }
+
+  .menu {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px 50px;
+  }
+}
+
+@media(max-width: 988px) {
+  p {
+    font-size: 12px;
+  }
+
+  h2 {
+    padding-top: 15%;
+    font-size: 2em;
+  }
+}
+
+
+@media(max-width: 688px) {
+  h2 {
+    padding-top: 25%;
+  }
+}
+
+@media(max-width: 450px) {
+  h2 {
+    padding-top: 35%;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .quote > p { 
+    font-size: 18px; 
+  }
+}

@@ -1,0 +1,96 @@
+/* NAV BAR'S COMMON GRID FOR ALL PAGES EXCEPT HOMEPAGE */
+.toOpenButton {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  background: white;
+  z-index: 60;
+}
+.toOpenButton > div {
+  height: 5px;
+  width: 50px;
+  margin-bottom:10px;
+  background-color: #312783;
+  position: relative;
+  top: 20px;
+  left: 95%;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr) 1fr;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: -100px;
+  transition: top 1s;
+  z-index: 60;
+}
+.show {
+  top: 0px;
+}
+
+/* links */
+nav > a {
+  text-align: center;
+  line-height: 80px;
+  border-right: 2px #312783 solid;
+  border-bottom: 2px #312783 solid;
+  background: white;
+  transition: 0.5s;
+}
+
+/* transitions */
+nav > a:hover {
+  background: #312783;
+  color: white;
+}
+nav > a:active {
+  background: rgba(46, 49, 146, 0.3);
+  border: rgba(46, 49, 146, 0.3);
+}
+
+/* CHANGES FOR SMALLER SCREENS */
+@media (max-width: 1283px) {
+  .toOpenButton {
+    height: 100px;
+  }
+  .toOpenButton > div {
+    left: 90%;
+  }
+  
+  nav {
+    grid-template-columns: repeat(2, 2fr) 1fr;
+    grid-template-rows: 50px 50px;
+  }
+
+  nav > a {
+    line-height: 50px;
+  }
+
+  nav > a:nth-child(3),
+  nav > a:nth-child(4) {
+    grid-row: 2;
+  }
+}
+
+@media (max-width: 900px) {
+  .toOpenButton > div {
+    left: 85%;
+  }
+
+  nav > a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 475px) {
+  .toOpenButton > div {
+    width: 35px;
+    height: 3px;
+  }
+
+  nav > a {
+    font-size: 10px;
+  }
+}

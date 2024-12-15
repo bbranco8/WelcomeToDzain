@@ -1,0 +1,9 @@
+Bruna,18,bbranco@gmail.com
+Bruna,18,bbranco@gmail.com
+mariana,19,marianaalexandra2m@gmail.com
+Bruna,18,bbranco@gmail.com
+Joana,20,joana@gmail.com,When do classes begin?,
+fff,33,juliasharma2003@gmail.com,333?,eeee
+fff,33,juliasharma2003@gmail.com,333?,eeee
+juju,33,juliasharma2003@gmail.com,33rr,5tt
+t,2,t@t.pt,t,t
